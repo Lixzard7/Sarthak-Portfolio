@@ -1,0 +1,11 @@
+version: 1.0
+runtime: nodejs18
+build:
+  commands:
+    build:
+      - npm install  # Only if you have a package.json, otherwise omit
+run:
+  runtime-version: 18
+  command: npx serve -p 8080 .
+  network:
+    port: 8080
