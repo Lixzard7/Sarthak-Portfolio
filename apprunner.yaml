@@ -1,11 +1,11 @@
 version: 1.0
-runtime: nodejs18
+runtime: python311
 build:
   commands:
     build:
-      - npm install  # Only if you have a package.json, otherwise omit
+      - echo "No build steps required for static HTML"
 run:
-  runtime-version: 18
-  command: npx serve -p 8080 .
+  command: python3 -m http.server 8080
   network:
     port: 8080
+
