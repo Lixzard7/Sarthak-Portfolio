@@ -1,1 +1,1 @@
-print("helloji")lelo
+print("helloji")
