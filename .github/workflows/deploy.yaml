@@ -19,7 +19,7 @@ jobs:
           aws-region: ap-south-1 # Change to your region
 
       - name: Deploy CloudFormation Stack
-        uses: aws-actions/aws-cloudformation-github-deploy@v2
+        uses: aws-actions/aws-cloudformation-github-deploy@v1
         with:
           name: sarthak-portfolio # Your existing stack name
           template: website-deploy.yaml # Path to your CloudFormation file
