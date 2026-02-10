@@ -25,4 +25,5 @@ jobs:
           template: website-deploy.yaml # Path to your CloudFormation file
           no-fail-on-empty-changeset: "1"
           # If you have parameters like your name, add them here:
+          
           parameter-overrides: "UserName=YourNewName" 
